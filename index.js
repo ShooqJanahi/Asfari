@@ -192,19 +192,6 @@ const aboutContent = `
 
 
 
-//============================ MIXITUP (projects section)
-const containerEl = document.querySelector('.projects__container');
-let mixer = mixitup(containerEl, {
-    animation: {
-        enable: false
-    }
-});
-
-mixer.filter('*');
-
-
-
-
 
 
 
