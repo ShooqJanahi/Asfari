@@ -145,8 +145,8 @@ const aboutContent = `
         <li>
             <h5>Contact Information</h5>
             <p>
-                <strong>Email:</strong> contact@asfari.com<br>
-                <strong>Phone Number:</strong> +973 17430055, +973 36331919<br>
+                <strong>Email:</strong> Khalid@asfari.bh<br>
+                <strong>Phone Number:</strong> +973 17430055, +973 36331919, +973 39291010<br>
                 
             </p>
         </li>
