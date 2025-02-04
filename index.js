@@ -53,30 +53,20 @@ floatingNavs.forEach(nav => {
 
 //============================ RESUME
 const resumeRight = document.querySelector('.resume__right')
-const experienceContent = `<h4>Experience</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita culpa molestiae velit ea reiciendis veritatis.</p>
-                <ul>
-                    <li>
-                        <h6>2018 - 2019</h6>
-                        <h5>Intern</h5>
-                        <p>Mobile Telecom Company</p>
-                    </li>
-                    <li>
-                        <h6>2019 - 2021</h6>
-                        <h5>Freelance Web Designer</h5>
-                        <p>Fiver and Upwork</p>
-                    </li>
-                    <li>
-                        <h6>2021 - 2022</h6>
-                        <h5>Frontend Developer</h5>
-                        <p>MTN Ghana</p>
-                    </li>
-                    <li>
-                        <h6>2022 - 2024</h6>
-                        <h5>Fullstack Freelancer</h5>
-                        <p>Self Employed</p>
-                    </li>
-                </ul>`
+const experienceContent = `<h4>Our Services</h4>
+    <p>We specialize in comprehensive travel and accounting solutions to meet all your needs.</p>
+    <ul>
+        <li>
+            <h5>Travel Planning & Tours</h5>
+            <p>Custom travel itineraries, guided tours, and vacation packages</p>
+        </li>
+       
+        <li>
+            <h5>Business Accounting</h5>
+            <p>Professional financial management and consulting</p>
+        </li>
+       
+    </ul>`
 
 const experienceBtn = document.querySelector('.experience__btn')
 experienceBtn.addEventListener('click', () => {
@@ -95,28 +85,32 @@ resumeRight.innerHTML = experienceContent;
 
 
 
-const educationContent = `<h4>Education</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores.</p>
-                <ul>
-                    <li>
-                        <h5>College Education</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas maiores qui doloremque accusantium atque vero facilis.
-                        </p>
-                    </li>
-                    <li>
-                        <h5>Frontend Education</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas maiores qui doloremque accusantium atque vero facilis.
-                        </p>
-                    </li>
-                    <li>
-                        <h5>Backend Education</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas maiores qui doloremque accusantium atque vero facilis.
-                        </p>
-                    </li>
-                </ul>`
+const educationContent = `
+    <h4>Destinations & Services</h4>
+    <p>Explore our popular destinations and comprehensive accounting services.</p>
+    <ul>
+        <li>
+            <h5>Travel Packages</h5>
+            <p>
+                Discover our curated travel experiences to Europe, Asia, Africa, and the Americas. 
+                Includes guided tours, luxury accommodations, and personalized itineraries.
+            </p>
+        </li>
+        <li>
+            <h5>Accounting Solutions</h5>
+            <p>
+                Professional accounting services including bookkeeping, tax preparation, financial planning, 
+                and business consulting for individuals and companies.
+            </p>
+        </li>
+        <li>
+            <h5>Special Offers</h5>
+            <p>
+                Seasonal travel deals, group discounts, and tailored accounting packages for businesses. 
+                
+            </p>
+        </li>
+    </ul>`
 const educationBtn = document.querySelector('.education__btn')
 educationBtn.addEventListener('click', () => {
     resumeRight.innerHTML = educationContent;
@@ -131,70 +125,48 @@ educationBtn.addEventListener('click', () => {
 
 
 
-const skillsContent = `
-<h4>Skills</h4>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <ul>
-                    <li><img src="./assets/react.webp" alt="ReactJS logo"></li>
-                    <li><img src="./assets/next.png" alt="NextJS logo"></li>
-                    <li><img src="./assets/tailwind.png" alt="Tailwind logo"></li>
-                    <li><img src="./assets/prisma.png" alt="Prisma logo"></li>
-                    <li><img src="./assets/mongo.jpg" alt="MongoDB logo"></li>
-                    <li><img src="./assets/jwt.png" alt="JWT logo"></li>
-                    <li><img src="./assets/node.png" alt="NodeJS logo"></li>
-                </ul>`
 
-const skillsBtn = document.querySelector('.skills__btn')
-skillsBtn.addEventListener('click', () => {
-    resumeRight.innerHTML = skillsContent;
-    resumeRight.className = "resume__right skills"
-    skillsBtn.classList.add('primary')
-        // remove classes from other buttons
-        experienceBtn.classList.remove('primary')
-        educationBtn.classList.remove('primary')
-        aboutBtn.classList.remove('primary')
-})
 
 
 
 
 const aboutContent = `
-<h4>About me</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit debitis excepturi quibusdam.</p>
-                <ul>
-                    <li>
-                        <h6>Name:</h6>
-                        <h5>Ernest Achiever</h5>
-                    </li>
-                    <li>
-                        <h6>Experience:</h6>
-                        <h5>6+ years</h5>
-                    </li>
-                    <li>
-                        <h6>Email:</h6>
-                        <h5>youremail@gmail.com</h5>
-                    </li>
-                    <li>
-                        <h6>Nationality:</h6>
-                        <h5>Ghanaian</h5>
-                    </li>
-                    <li>
-                        <h6>Freelance & collabs:</h6>
-                        <h5>Available</h5>
-                    </li>
-                    <li>
-                        <h6>Language:</h6>
-                        <h5>English</h5>
-                    </li>
-                    <li>
-                        <h6>Phone:</h6>
-                        <h5>+233557097546</h5>
-                    </li>
-                    <li>
-                        <h6>LinkedIn:</h6>
-                        <h5>@yourhandle</h5>
-                    </li>
-                </ul>`
+    <h4>Company Information</h4>
+    <p>Your trusted partner for travel and accounting solutions.</p>
+    <ul>
+        <li>
+            <h6>Company:</h6>
+            <h5>Asfari Services</h5>
+        </li>
+        <li>
+            <h6>Established:</h6>
+            <h5>Since 2020</h5>
+        </li>
+        <li>
+            <h6>Email:</h6>
+            <h5>contact@asfariservices.com</h5>
+        </li>
+        <li>
+            <h6>Office Location:</h6>
+            <h5>Ghana</h5>
+        </li>
+        <li>
+            <h6>Business Hours:</h6>
+            <h5>Mon-Sat: 9AM-6PM</h5>
+        </li>
+        <li>
+            <h6>Languages:</h6>
+            <h5>English, Arabic</h5>
+        </li>
+        <li>
+            <h6>Emergency Contact:</h6>
+            <h5>+233 55 709 7546</h5>
+        </li>
+        <li>
+            <h6>Social Media:</h6>
+            <h5>@asfariservices</h5>
+        </li>
+    </ul>`
 
 
     const aboutBtn = document.querySelector('.about__btn')
