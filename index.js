@@ -138,7 +138,7 @@ const aboutContent = `
             <h5>Company Details</h5>
             <p>
                 <strong>Name:</strong> Asfari <br>
-                <strong>Established:</strong> Since 2020<br>
+                <strong>Established:</strong> Since 2013<br>
                 <strong>Location:</strong> Arad, Bahrain
             </p>
         </li>
