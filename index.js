@@ -71,7 +71,7 @@ const experienceContent = `<h4>Our Services</h4>
 const experienceBtn = document.querySelector('.experience__btn')
 experienceBtn.addEventListener('click', () => {
     resumeRight.innerHTML = experienceContent;
-    resumeRight.className = 'resume__right'
+    resumeRight.className = 'resume__right education'
     experienceBtn.classList.add('primary')
         // remove classes from other buttons
         aboutBtn.classList.remove('primary')
@@ -135,37 +135,30 @@ const aboutContent = `
     <p>Your trusted partner for travel and accounting solutions.</p>
     <ul>
         <li>
-            <h6>Company:</h6>
-            <h5>Asfari Services</h5>
+            <h5>Company Details</h5>
+            <p>
+                <strong>Name:</strong> Asfari <br>
+                <strong>Established:</strong> Since 2020<br>
+                <strong>Location:</strong> Arad, Bahrain
+            </p>
         </li>
         <li>
-            <h6>Established:</h6>
-            <h5>Since 2020</h5>
+            <h5>Contact Information</h5>
+            <p>
+                <strong>Email:</strong> contact@asfari.com<br>
+                <strong>Phone Number:</strong> +973 17430055, +973 36331919<br>
+                
+            </p>
         </li>
         <li>
-            <h6>Email:</h6>
-            <h5>contact@asfariservices.com</h5>
+            <h5>Business Hours</h5>
+            <p>
+                
+                <strong>Hours:</strong> 9:00 AM - 8:00 PM<br>
+                <strong>Languages:</strong> English, Arabic
+            </p>
         </li>
-        <li>
-            <h6>Office Location:</h6>
-            <h5>Ghana</h5>
-        </li>
-        <li>
-            <h6>Business Hours:</h6>
-            <h5>Mon-Sat: 9AM-6PM</h5>
-        </li>
-        <li>
-            <h6>Languages:</h6>
-            <h5>English, Arabic</h5>
-        </li>
-        <li>
-            <h6>Emergency Contact:</h6>
-            <h5>+233 55 709 7546</h5>
-        </li>
-        <li>
-            <h6>Social Media:</h6>
-            <h5>@asfariservices</h5>
-        </li>
+        
     </ul>`
 
 
