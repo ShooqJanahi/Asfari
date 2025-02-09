@@ -61,6 +61,151 @@ html {
     background: var(--color-primary);
 }
 
+/* Animated Splash Screen */
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    animation: fadeSplash 0.5s ease-in-out 2s forwards;
+}
+
+.splash-content {
+    text-align: center;
+    color: white;
+}
+
+.splash-logo {
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: logoReveal 0.8s ease forwards;
+}
+
+.splash-logo img {
+    width: 120px;  /* Adjust size as needed */
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+}
+
+.splash-content h2 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideDown 0.5s ease forwards 0.4s;
+}
+
+.splash-content h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: scaleIn 0.5s ease forwards 0.7s;
+}
+
+.splash-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.5s ease forwards 1s;
+}
+
+/* Logo Animation */
+@keyframes logoReveal {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Other Animations */
+@keyframes fadeSplash {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Gradient Background Animation */
+.splash::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, 
+        var(--color-primary), 
+        var(--color-primary-variant));
+    background-size: 200% 200%;
+    animation: gradientBG 2s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
