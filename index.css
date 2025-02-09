@@ -412,6 +412,12 @@ section {
     padding: 10rem 0;
 }
 
+.see-more {
+    color: var(--color-primary); /* or your preferred color */
+    font-weight: 600;
+    margin-left: 5px;
+}
+
 section:nth-child(even) {
     background: var(--color-gray-50);
 }
