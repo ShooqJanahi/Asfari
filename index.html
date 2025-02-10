@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google" content="translate">
+    
     <title>Asfari</title>
     <!-- ICONSCOUT -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
     <!-- SWIPER JS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- ANIMATE ON SCROLL  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./index.css">
 
-     <!-- Favicon -->
-     <link rel="icon" type="image/x-icon" href="./assets/Travel.png">
+    <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend/dist/umd/i18nextHttpBackend.min.js"></script>
 
-     <!-- Add this right after the opening <body> tag -->
-        <div class="splash">
-            <div class="splash-content">
-                <div class="splash-logo">
-                    <img src="./assets/Travel.png" alt="Asfari Services Logo">
-                </div>
-                <div class="splash-text">
-                    <h2>Welcome to</h2>
-                    <h1>Asfari Services</h1>
-                    <p>Your Journey Begins Here</p>
-                </div>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/Travel.png">
+
+    <!-- Add this right after the opening <body> tag -->
+    <div class="splash">
+        <div class="splash-content">
+            <div class="splash-logo">
+                <img src="./assets/Travel.png" alt="Asfari Services Logo">
+            </div>
+            <div class="splash-text">
+                <h2>Welcome to</h2>
+                <h1>Asfari Services</h1>
+                <p>Your Journey Begins Here</p>
             </div>
         </div>
+    </div>
 
-<!-- Rest of your existing body content -->
+    <!-- Rest of your existing body content -->
 </head>
+
 <body>
     <!--========================== TOP NAV BAR  =============================-->
     <nav>
         <div class="container nav__container">
-            <a href="index.html">Asfari Services</a>
+            <a data-i18n="nav-title" href="index.html">Asfari Services</a>
             <button class="nav__theme-btn">
                 <i class="uil uil-moon"></i>
             </button>
+
+           
         </div>
     </nav>
 
@@ -78,15 +87,16 @@
             <div class="header__image" data-aos="fade-up" data-aos-delay="800">
                 <img src="./assets/Travel.png" alt="Header Portrait">
             </div>
-            <h5 data-aos="fade-in">Welcome to Asfari Services</h5>
-            <h1 data-aos="fade-in">Your One-Stop Solution for<br/><span>Travel & Accounting</span></h1>
-            <p data-aos="fade-in">Experience hassle-free travel planning with expert guides and professional accounting services under one roof. From exotic destinations to financial excellence, we've got you covered.</p>
+            <h5 data-i18n="header-welcome" data-aos="fade-in">Welcome to Asfari Services</h5>
+            <h1 data-i18n="" data-aos="fade-in">Your One-Stop Solution for<br /><span>Travel & Accounting</span></h1>
+            <p data-aos="fade-in">Experience hassle-free travel planning with expert guides and professional accounting
+                services under one roof. From exotic destinations to financial excellence, we've got you covered.</p>
             <div class="header__cta" data-aos="fade-in">
                 <a href="#service" class="btn">Our Services</a>
                 <a href="#contact" class="btn primary">Contact Us</a>
             </div>
 
-            
+
         </div>
     </header>
 
@@ -111,7 +121,7 @@
                     <button class="btn education__btn">Destinations & Services</button>
                     <button class="btn accounting__btn">Accounting Package</button>
                     <button class="btn about__btn">Company Information</button>
-                    
+
                 </menu>
             </div>
 
@@ -144,7 +154,7 @@
             </div>
 
 
-            
+
 
 
             <!-- <div class="resume__right about">
@@ -206,22 +216,24 @@
     <section class="projects" id="business">
         <h1>Our Businesses</h1>
         <p>Discover our portfolio of professional services and businesses</p>
-    
+
         <div class="container projects__container" data-aos="fade-in" data-aos-delay="200">
             <a href="https://www.instagram.com/asfari_bh" target="_blank" class="project">
                 <div class="project__image">
                     <img src="./assets/Asfari_Travel.jpg" alt="Travel Agency">
                 </div>
                 <h5>Asfari Travel</h5>
-                <p>Expert travel planning, personalized itineraries, and guided tours across the globe. Experience luxury travel with our dedicated service.<span class="see-more">See more</span></p>
+                <p>Expert travel planning, personalized itineraries, and guided tours across the globe. Experience
+                    luxury travel with our dedicated service.<span class="see-more">See more</span></p>
             </a>
-    
+
             <a href="https://www.instagram.com/kb_accounting" target="_blank" class="project mix" data-order="2">
                 <div class="project__image">
                     <img src="./assets/Accounting.jpg" alt="Accounting Services">
                 </div>
                 <h5>KB Accounting</h5>
-                <p>Professional financial services including bookkeeping, tax preparation, and business consulting for individuals and companies.<span class="see-more">See more</span></p>
+                <p>Professional financial services including bookkeeping, tax preparation, and business consulting for
+                    individuals and companies.<span class="see-more">See more</span></p>
             </a>
         </div>
     </section>
@@ -242,7 +254,7 @@
 
 
     <!--============================ TESTIMONIALS ============================-->
-   <!--
+    <!--
     <section id="swiper">
         <h1>What my clients say</h1>
         <p>This is what my clients say about me and my work.</p>
@@ -320,8 +332,8 @@
                 </figure>
             </div> 
             -->
-            <!-- If we need pagination -->
-       <!-- <div class="swiper-pagination"></div>
+    <!-- If we need pagination -->
+    <!-- <div class="swiper-pagination"></div>
         </div>
     </section>
 -->
@@ -337,90 +349,100 @@
 
 
 
-<section id="faqs">
-    <h1>Frequently Asked Questions</h1>
-    <p>Find answers to common questions about our travel and accounting services.</p>
-    <menu class="container faqs__container">
-        <li class="faqs__item" data-aos="fade-in" data-aos-delay="200">
-            <div class="faqs__item-top">
-                <span class="faq__icon"><i class="uil uil-angle-down"></i></span>
-                <h5>What travel services do you offer?</h5>
-            </div>
-            <div class="faqs__item-bottom">
-                <span></span>
-                <p>
-                    We offer comprehensive travel planning services including flight bookings, hotel reservations, guided tours, custom itineraries, and luxury vacation packages. Our services cover destinations worldwide with special expertise in Middle Eastern travel.
-                </p>
-            </div>
-        </li>
-        <li class="faqs__item" data-aos="fade-in" data-aos-delay="200">
-            <div class="faqs__item-top">
-                <span class="faq__icon"><i class="uil uil-angle-down"></i></span>
-                <h5>What accounting services do you provide?</h5>
-            </div>
-            <div class="faqs__item-bottom">
-                <span></span>
-                <p>
-                    Our accounting services include bookkeeping, tax preparation, financial planning, business consulting, and audit support. We serve both individuals and businesses with customized solutions tailored to your needs.
-                </p>
-            </div>
-        </li>
-        <li class="faqs__item" data-aos="fade-in" data-aos-delay="400">
-            <div class="faqs__item-top">
-                <span class="faq__icon"><i class="uil uil-angle-down"></i></span>
-                <h5>What are your business hours?</h5>
-            </div>
-            <div class="faqs__item-bottom">
-                <span></span>
-                <p>
-                    We are open from 9:00 AM to 8:00 PM, Sunday through Thursday. For travel emergencies, we provide 24/7 support to our clients through our emergency contact line.
-                </p>
-            </div>
-        </li>
-        <li class="faqs__item" data-aos="fade-in" data-aos-delay="400">
-            <div class="faqs__item-top">
-                <span class="faq__icon"><i class="uil uil-angle-down"></i></span>
-                <h5>How do I book your services?</h5>
-            </div>
-            <div class="faqs__item-bottom">
-                <span></span>
-                <p>
-                    You can book our services by calling our office at +973 17430055, +973 36331919, +973 39291010 or by visiting our office in Arad, Bahrain. We also offer online consultations for both travel and accounting services.
-                </p>
-            </div>
-        </li>
-        <li class="faqs__item" data-aos="fade-in" data-aos-delay="600">
-            <div class="faqs__item-top">
-                <span class="faq__icon"><i class="uil uil-angle-down"></i></span>
-                <h5>Do you offer customized packages?</h5>
-            </div>
-            <div class="faqs__item-bottom">
-                <span></span>
-                <p>
-                    Yes, we offer fully customized packages for both travel and accounting services. Our travel packages can be tailored to your preferences and budget, while our accounting services can be customized to meet your specific business needs.
-                </p>
-            </div>
-        </li>
-        <li class="faqs__item" data-aos="fade-in" data-aos-delay="600">
-            <div class="faqs__item-top">
-                <span class="faq__icon"><i class="uil uil-angle-down"></i></span>
-                <h5>What languages do you support?</h5>
-            </div>
-            <div class="faqs__item-bottom">
-                <span></span>
-                <p>
-                    Our team provides services in both English and Arabic to ensure clear communication with all our clients. Our travel guides also speak multiple languages to accommodate international travelers.
-                </p>
-            </div>
-        </li>
-    </menu>
-</section>
+    <section id="faqs">
+        <h1>Frequently Asked Questions</h1>
+        <p>Find answers to common questions about our travel and accounting services.</p>
+        <menu class="container faqs__container">
+            <li class="faqs__item" data-aos="fade-in" data-aos-delay="200">
+                <div class="faqs__item-top">
+                    <span class="faq__icon"><i class="uil uil-angle-down"></i></span>
+                    <h5>What travel services do you offer?</h5>
+                </div>
+                <div class="faqs__item-bottom">
+                    <span></span>
+                    <p>
+                        We offer comprehensive travel planning services including flight bookings, hotel reservations,
+                        guided tours, custom itineraries, and luxury vacation packages. Our services cover destinations
+                        worldwide with special expertise in Middle Eastern travel.
+                    </p>
+                </div>
+            </li>
+            <li class="faqs__item" data-aos="fade-in" data-aos-delay="200">
+                <div class="faqs__item-top">
+                    <span class="faq__icon"><i class="uil uil-angle-down"></i></span>
+                    <h5>What accounting services do you provide?</h5>
+                </div>
+                <div class="faqs__item-bottom">
+                    <span></span>
+                    <p>
+                        Our accounting services include bookkeeping, tax preparation, financial planning, business
+                        consulting, and audit support. We serve both individuals and businesses with customized
+                        solutions tailored to your needs.
+                    </p>
+                </div>
+            </li>
+            <li class="faqs__item" data-aos="fade-in" data-aos-delay="400">
+                <div class="faqs__item-top">
+                    <span class="faq__icon"><i class="uil uil-angle-down"></i></span>
+                    <h5>What are your business hours?</h5>
+                </div>
+                <div class="faqs__item-bottom">
+                    <span></span>
+                    <p>
+                        We are open from 9:00 AM to 8:00 PM, Sunday through Thursday. For travel emergencies, we provide
+                        24/7 support to our clients through our emergency contact line.
+                    </p>
+                </div>
+            </li>
+            <li class="faqs__item" data-aos="fade-in" data-aos-delay="400">
+                <div class="faqs__item-top">
+                    <span class="faq__icon"><i class="uil uil-angle-down"></i></span>
+                    <h5>How do I book your services?</h5>
+                </div>
+                <div class="faqs__item-bottom">
+                    <span></span>
+                    <p>
+                        You can book our services by calling our office at +973 17430055, +973 36331919, +973 39291010
+                        or by visiting our office in Arad, Bahrain. We also offer online consultations for both travel
+                        and accounting services.
+                    </p>
+                </div>
+            </li>
+            <li class="faqs__item" data-aos="fade-in" data-aos-delay="600">
+                <div class="faqs__item-top">
+                    <span class="faq__icon"><i class="uil uil-angle-down"></i></span>
+                    <h5>Do you offer customized packages?</h5>
+                </div>
+                <div class="faqs__item-bottom">
+                    <span></span>
+                    <p>
+                        Yes, we offer fully customized packages for both travel and accounting services. Our travel
+                        packages can be tailored to your preferences and budget, while our accounting services can be
+                        customized to meet your specific business needs.
+                    </p>
+                </div>
+            </li>
+            <li class="faqs__item" data-aos="fade-in" data-aos-delay="600">
+                <div class="faqs__item-top">
+                    <span class="faq__icon"><i class="uil uil-angle-down"></i></span>
+                    <h5>What languages do you support?</h5>
+                </div>
+                <div class="faqs__item-bottom">
+                    <span></span>
+                    <p>
+                        Our team provides services in both English and Arabic to ensure clear communication with all our
+                        clients. Our travel guides also speak multiple languages to accommodate international travelers.
+                    </p>
+                </div>
+            </li>
+        </menu>
+    </section>
 
 
 
 
 
-    
+
 
     <!--============================ CONTACT ============================-->
     <section id="contact">
@@ -429,7 +451,7 @@
                 <a href="mailto:Khalid@asfari.bh" class="contact__option" target="_blank">
                     <i class="uil uil-envelope"></i>
                 </a>
-               
+
                 <a href="https://wa.me/+97339291010" class="contact__option" target="_blank">
                     <i class="uil uil-whatsapp"></i>
                 </a>
@@ -439,7 +461,8 @@
             </menu>
 
             <!-- Add your email below and send your first message to active the form -->
-            <form action="https://formsubmit.co/Khalid@asfari.bh" method="POST" class="contact__form" data-aos="fade-up" data-aos-delay="600">
+            <form action="https://formsubmit.co/Khalid@asfari.bh" method="POST" class="contact__form" data-aos="fade-up"
+                data-aos-delay="600">
                 <input type="text" name="Name" placeholder="Full Name">
                 <input type="email" name="Email" placeholder="Email Address">
                 <textarea rows="7" name="Message" placeholder="Message"></textarea>
@@ -450,13 +473,14 @@
 
 
 
-    
-  
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({duration: 2000, offset: 80});
+        AOS.init({ duration: 2000, offset: 80 });
     </script>
     <script src="./index.js"></script>
 </body>
+
 </html>

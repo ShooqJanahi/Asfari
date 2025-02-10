@@ -1,3 +1,5 @@
+
+
 //============================ FLOATING NAV
 const floatingNavs = document.querySelectorAll('.floatingNav a')
 const removeActiveNavs = () => {
