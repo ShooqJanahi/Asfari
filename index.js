@@ -124,7 +124,44 @@ educationBtn.addEventListener('click', () => {
 
 
 
+const accountingContent = `
+    <h4>Special Accounting Package</h4>
+    <p>Free Profit and Loss Account for the first year with comprehensive financial services.</p>
+    <ul>
+        <li>
+            <h5>Package Includes</h5>
+            <p>• Financial consultations<br>
+               • Profit and loss account (1st year free)<br>
+               • Asset valuation<br>
+               • Bank account review<br>
+               • Tax consultations<br>
+               • Future project planning</p>
+        </li>
+        <li>
+            <h5>Core Services</h5>
+            <p>• Bookkeeping<br>
+               • Accounting<br>
+               • Tax consultations</p>
+        </li>
+        <li>
+            <h5>Terms & Conditions</h5>
+            <p>• 3-year contract<br>
+               • Valid until June 30, 2025<br>
+               • Special financial reports</p>
+        </li>
+    </ul>`;
 
+   const accountingBtn = document.querySelector('.accounting__btn')
+accountingBtn.addEventListener('click', () => {
+    resumeRight.innerHTML = accountingContent;
+    resumeRight.className = 'resume__right accounting';
+    // Remove primary from all buttons first
+    experienceBtn.classList.remove('primary');
+    educationBtn.classList.remove('primary');
+    aboutBtn.classList.remove('primary');
+    // Add primary to accounting button
+    accountingBtn.classList.add('primary');
+});
 
 
 
@@ -171,11 +208,37 @@ const aboutContent = `
         experienceBtn.classList.remove('primary')
         educationBtn.classList.remove('primary')
         skillsBtn.classList.remove('primary')
+        
     })
 
 
 
+// Get all category buttons
+const buttons = document.querySelectorAll('.resume__left menu button');
 
+// Function to handle button clicks
+const handleButtonClick = (activeButton, content) => {
+    // Remove primary class from all buttons
+    buttons.forEach(button => button.classList.remove('primary'));
+    
+    // Add primary class to clicked button
+    activeButton.classList.add('primary');
+    
+    // Update content
+    resumeRight.innerHTML = content;
+    resumeRight.className = `resume__right ${activeButton.className.includes('experience') ? 'education' : 
+                                          activeButton.className.includes('education') ? 'education' : 
+                                          activeButton.className.includes('accounting') ? 'accounting' : 'about'}`;
+};
+
+// Add event listeners
+experienceBtn.addEventListener('click', () => handleButtonClick(experienceBtn, experienceContent));
+educationBtn.addEventListener('click', () => handleButtonClick(educationBtn, educationContent));
+accountingBtn.addEventListener('click', () => handleButtonClick(accountingBtn, accountingContent));
+aboutBtn.addEventListener('click', () => handleButtonClick(aboutBtn, aboutContent));
+
+// Set default active button
+experienceBtn.classList.add('primary');
 
 
 

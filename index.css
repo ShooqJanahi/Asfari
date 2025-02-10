@@ -653,7 +653,7 @@ header {
 }
 
 .resume__left menu button {
-    background: var(--color-gray-0);
+    background: var(--color-gray-100);
     border: transparent;
 }
 
