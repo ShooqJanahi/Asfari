@@ -76,7 +76,7 @@ experienceBtn.addEventListener('click', () => {
         // remove classes from other buttons
         aboutBtn.classList.remove('primary')
         educationBtn.classList.remove('primary')
-        skillsBtn.classList.remove('primary')
+        //skillsBtn.classList.remove('primary')
 })
 
 // set experience content as the default content resume right when the page loads
@@ -119,7 +119,7 @@ educationBtn.addEventListener('click', () => {
         // remove classes from other buttons
         experienceBtn.classList.remove('primary')
         aboutBtn.classList.remove('primary')
-        skillsBtn.classList.remove('primary')
+        //skillsBtn.classList.remove('primary')
 })
 
 
@@ -207,7 +207,7 @@ const aboutContent = `
         // remove classes from other buttons
         experienceBtn.classList.remove('primary')
         educationBtn.classList.remove('primary')
-        skillsBtn.classList.remove('primary')
+        //skillsBtn.classList.remove('primary')
         
     })
 
