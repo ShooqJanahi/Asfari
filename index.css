@@ -686,24 +686,46 @@ header {
 }
 
 .resume__right li {
-    background: var(--color-gray-0);
-    padding: 1.5rem;
-    border: 0.4rem solid var(--color-gray-0);
+    background: var(--color-gray-50);  /* Changed from color-gray-0 to add grey background */
+    padding: 2rem;  /* Increased padding for more spacing */
+    border-radius: 0.5rem;  /* Added rounded corners */
+    border: 1px solid var(--color-gray-200);  /* Added subtle border */
     transition: var(--transition);
     cursor: default;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);  /* Added subtle shadow */
 }
 
 .resume__right li:hover {
-    background: transparent;
+    background: var(--color-gray-100);  /* Changed hover state */
+    transform: translateY(-2px);  /* Added slight lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Enhanced shadow on hover */
 }
 
 .resume__right li h6 {
     color: var(--color-gray-500);
+    font-size: 0.9rem;
 }
 
 .resume__right li h5 {
     margin: 0.8rem 0;
     color: var(--color-primary);
+    font-size: 1.1rem;
+}
+
+.resume__right li p {
+    color: var(--color-gray-600);
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .resume__right ul {
+        grid-template-columns: 1fr;  /* Single column on mobile */
+    }
+    
+    .resume__right li {
+        padding: 1.5rem;  /* Slightly reduced padding on mobile */
+    }
 }
 
 
